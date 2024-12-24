@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的旅行路线</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to bottom, #74b9ff, #81ecec);
+            color: #2d3436;
+        }
+        .header {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(to right, #6c5ce7, #00cec9);
+            color: #fff;
+        }
+        .header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .header p {
+            font-size: 1.5em;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .city {
+            display: flex;
+            align-items: center;
+            margin: 30px 0;
+            padding: 20px;
+            border-radius: 10px;
+            background: linear-gradient(to right, #ff7675, #fdcb6e);
+            color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .city:hover {
+            transform: scale(1.05);
+        }
+        .city img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            margin-right: 20px;
+            object-fit: cover;
+        }
+        .city-info {
+            flex-grow: 1;
+        }
+        .city-info h2 {
+            margin: 0;
+            font-size: 2em;
+        }
+        .city-info p {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2d3436;
+            color: #ffffff;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>我的旅行路线</h1>
+        <p>跟随我的脚步!</p>
+    </div>
+    <div class="container">
+        <div class="city">
+            <img src="images/07.jpg" alt="北京">
+            <div class="city-info">
+                <h2><a href="beijing.html">北京</a></h2>
+                <p>首都北京，历史文化的中心，拥有雄伟的故宫与长城。</p>
+            </div>
+        </div>
+        <div class="city">
+            <img src="images/10.jpg" alt="九寨沟">
+            <div class="city-info">
+                <h2><a href="aba.html">九寨沟</a></h2>
+                <p>童话般的仙境，拥有清澈的湖泊和瀑布，令人心旷神怡。</p>
+            </div>
+        </div>
+        <div class="city">
+            <img src="images/18.jpg" alt="武汉">
+            <div class="city-info">
+                <h2><a href="wuhan.html">武汉</a></h2>
+                <p>长江之畔的璀璨城市，美食与文化的交融之地。</p>
+            </div>
+        </div>
+        <div class="city">
+            <img src="images/22.jpg" alt="杭州">
+            <div class="city-info">
+                <h2><a href="hangzhou.html">杭州</a></h2>
+                <p>人间天堂，西湖美景如诗如画。</p>
+            </div>
+        </div>
+        <div class="city">
+            <img src="images/25.jpg" alt="苏州">
+            <div class="city-info">
+                <h2><a href="suzhou.html">苏州</a></h2>
+                <p>园林之都，小桥流水，尽显江南水乡韵味。</p>
+            </div>
+        </div>
+        <div class="city">
+            <img src="images/23.jpg" alt="佛山">
+            <div class="city-info">
+                <h2><a href="foshan.html">佛山</a></h2>
+                <p>功夫之乡，岭南文化的发源地。</p>
+            </div>
+        </div>
+        <div class="city">
+            <img src="images/26.jpg" alt="上海">
+            <div class="city-info">
+                <h2>上海</h2>
+                <p>东方明珠，现代与历史交织的国际大都市。</p>
+            </div>
+        </div>
+        <div class="city">
+            <img src="images/05.jpg" alt="深圳">
+            <div class="city-info">
+                <h2>深圳</h2>
+                <p>活力四射的科技之城，现代化的奇迹。</p>
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+        &copy; 2024 我的旅行路线 | 精美呈现，伴您畅游每一站！
+    </footer>
+</body>
+</html>

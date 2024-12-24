@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yld_MyWebsite_travle</title>
+    <link rel="shortcut icon" href="bitbug_favicon.ico" />
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    \
+    <div id="progressContainer" style="position: fixed; top: 0; left: 0; width: 100%; height: 5px; background: #f3f3f3; z-index: 1000;">
+        <div id="progressBar" style="height: 5px; width: 0; background: #3498db;"></div>
+    </div>
+
+    <div id="loadingScreen" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #ffffff; z-index: 9999; display: flex; justify-content: center; align-items: center;">
+        <div style="text-align: center;">
+            <div class="spinner" style="width: 50px; height: 50px; border: 5px solid #f3f3f3; border-top: 5px solid #3498db; border-radius: 50%; animation: spin 1s linear infinite;"></div>
+            <p style="margin-top: 10px; font-size: 18px; color: #555;">页面加载中...</p>
+        </div>
+    </div>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+
+     <section class="shortcut">
+        <div class="w">
+            <div class="fl">
+                <ul>
+                    <li>叶霖德欢迎您!&nbsp;</li>
+                    <li id="currentTime" style="font-weight: bold;"></li> 
+                    <li>
+                        <a href="denglu.html"> 请登录 </a>&nbsp;<a href="denglu.html" class="style_blue"> 免费注册</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="fr">
+                <ul>
+                    <li><a href="denglu.html">我的账号</a></li>
+                    <li></li>
+                    <li class="arrow-icon"><a href="xingcheng.html">我的行程</a></li>
+                    <li></li>
+                    <li><a href="denglu.html">行程会员</a></li>
+                    <li></li>
+                    <li><a href="denglu.html">企业讯息</a></li>
+                    <li></li>
+                    <li class="arrow-icon"><a href="jingdian.html">关注导游</a></li>
+                    <li></li>
+                    <li class="arrow-icon"><a href="xingcheng.html">客户服务</a></li>
+                    <li></li>
+                    <li class="arrow-icon"><a href="jingdian.html">网站导航</a></li>
+                </ul>
+            </div>
+        </div>
+     </section>   
+
+    <div id="randomQuote" style="font-size: 20px; font-style: italic; margin: 20px 0; text-align: center; color: #555;">
+        加载中...
+    </div>
+
+      <header class="header w">
+        <div class="logo">
+            <h1>
+                <a href="index.html" title="叶霖德的网站">叶霖德的网站</a>
+            </h1>
+        </div>
+
+        <div id="typingEffect" style="font-size: 20px; font-weight: bold; margin: 20px auto; text-align: center; color: #333;">
+        </div>
+
+        <div class="search">
+            <input type="search" id="searchInput" placeholder="想去的地方">
+            <button id="searchButton">搜索</button>
+            <div id="suggestions" style="display: none; position: absolute; background: white; border: 1px solid #ddd; width: calc(100% - 22px); z-index: 1000;">
+            </div>
+        </div>
+
+        <div class="hotwords">
+            <a href="jingdian.html" class="style_blue">我的照片</a>
+            <a href="youhuiquan.html">旅游优惠券</a>
+            <a href="jingdian.html">图片欣赏</a>
+            <a href="youhuiquan.html">领取优惠</a>
+            <a href="wodeluxian.html">跟我一起</a>
+            <a href="denglu.html">查询用户</a>
+            <a href="xingcheng.html">我的行程</a>
+        </div>
+
+        <div class="interests">
+            <a href="wodeluxian.html">
+            去过的地方
+            </a>
+            <i class="count">9</i>
+        </div>
+
+      </header>
+      <nav class="nav">
+        <div class="w">
+            <div class="dropdown">
+                <div class="dt">全部景点分类</div>
+                <div class="dd">
+                    <ul>
+                        <li><a href="aba.html">九寨沟</a></li>
+                        <li><a href="chengdu.html">成都</a></li>
+                        <li><a href="beijing.html">北京</a></li>
+                        <li><a href="suzhou.html">苏州</a></li>
+                        <li><a href="hangzhou.html">杭州</a></li>
+                        <li><a href="wuhan.html">武汉</a></li>
+                        <li><a href="foshan.html">佛山</a></li>
+                        <li><a href="#">深圳</a></li>
+                        <li><a href="#">上海</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="navitems">
+                <ul>
+                    <li><a href="jingdian.html">景点摄影</a></li>
+                    <li><a href="renxiang.html">人像摄影</a></li>
+                    <li><a href="biji.html">旅游笔记</a></li>
+                    <li><a href="biji.html">随心记</a></li>
+                    <li><a href="wodeluxian.html">跟随我的路线</a></li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+
+      <div class="w">
+        <div class="main">
+            <div class="focus">
+                <ul>
+                    <li>
+                        <img src="images/001.jpg" id="LB">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="newsflash">
+                <div class="news">
+                    <div class="news-hd">
+                        <h5>最新消息</h5>
+                        <a href="wodeluxian.html" class="more">更多</a>
+                    </div>
+                    <div class="news-bd">
+                        <ul>
+                            <li><a href="jingdian.html"><strong>[yld]</strong> 你可曾听闻我的故事</a></li>
+                            <li><a href="jingdian.html"><strong>[yld]</strong> 你可曾听闻他的故事</a></li>
+                            <li><a href="jingdian.html"><strong>[yld]</strong> 你可曾听闻她的故事</a></li>
+                            <li><a href="jingdian.html"><strong>[yld]</strong> 你可曾听闻你的故事</a></li>
+                            <li><a href="jingdian.html"><strong>[yld]</strong> 你可曾听闻以前的事</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="lifeservice">
+                    <ul>
+                        <li><img src="" id="" ></li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="w recomm">
+        <div class="image-gallery">
+            <img src="images/02.jpg" class="thumbnail" onclick="showImage('images/02.jpg')" alt="Image 1">
+            <img src="images/03.jpg" class="thumbnail" onclick="showImage('images/03.jpg')" alt="Image 2">
+            <img src="images/12.jpg" class="thumbnail" onclick="showImage('images/12.jpg')" alt="Image 3">
+            <img src="images/14.jpg" class="thumbnail" onclick="showImage('images/14.jpg')" alt="Image 4">
+            <img src="images/09.jpg" class="thumbnail" onclick="showImage('images/09.jpg')" alt="Image 5">
+            <img src="images/18.jpg" class="thumbnail" onclick="showImage('images/03.jpg')" alt="Image 6">
+            <img src="images/10.jpg" class="thumbnail" onclick="showImage('images/03.jpg')" alt="Image 7">
+            <img src="images/11.jpg" class="thumbnail" onclick="showImage('images/03.jpg')" alt="Image 8">
+            <img src="images/13.jpg" class="thumbnail" onclick="showImage('images/03.jpg')" alt="Image 9">
+            <img src="images/14.jpg" class="thumbnail" onclick="showImage('images/03.jpg')" alt="Image 9">
+            <img src="images/15.jpg" class="thumbnail" onclick="showImage('images/03.jpg')" alt="Image 9">
+            <img src="images/16.jpg" class="thumbnail" onclick="showImage('images/03.jpg')" alt="Image 9">
+            <img src="images/17.jpg" class="thumbnail" onclick="showImage('images/03.jpg')" alt="Image 9">
+        </div>
+    
+        <div id="imageModal" class="modal" onclick="closeModal()">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="fullImage">
+        </div>
+      <footer class="footer">
+
+        <div class="w">
+            <div class="mod_service">
+                <ul>
+                    <li>
+                        <h5>YLD</h5>
+                        <div class="service_txt">
+                            <h4>随处幻想</h4>
+                            <p>无限进步</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h5>YLD</h5>
+                        <div class="service_txt">
+                            <h4>不要放弃</h4>
+                            <p>未来可期</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h5>YLD</h5>
+                        <div class="service_txt">
+                            <h4>前途似锦</h4>
+                            <p>前途无量</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h5>YLD</h5>
+                        <div class="service_txt">
+                            <h4>天天开心</h4>
+                            <p>祝你好运</p>
+                        </div>
+                    </li>
+
+
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <div class="mod_help">
+                
+                <dl>
+                    <dt>关于我们</dt>
+                    <dd><a href="denglu.html">公司简介</a></dd>
+                    <dd><a href="denglu.html">团队介绍</a></dd>
+                    <dd><a href="denglu.html">企业文化</a></dd>
+                    <dd><a href="denglu.html">联系我们</a></dd>
+                    <dd><a href="denglu.html">加入我们</a></dd>
+                </dl>
+                
+                <dl>
+                    <dt>服务支持</dt>
+                    <dd><a href="denglu.html">常见问题</a></dd>
+                    <dd><a href="denglu.html">技术支持</a></dd>
+                    <dd><a href="denglu.html">使用指南</a></dd>
+                    <dd><a href="denglu.html">意见反馈</a></dd>
+                </dl>
+               
+                <dl>
+                    <dt>法律声明</dt>
+                    <dd><a href="denglu.html">服务条款</a></dd>
+                    <dd><a href="denglu.html">隐私政策</a></dd>
+                    <dd><a href="denglu.html">版权声明</a></dd>
+                </dl>
+               
+                <dl>
+                    <dt>关注我们</dt>
+                    <dd><a href="https://weibo.com" target="_blank">微博</a></dd>
+                    <dd><a href="https://weixin.qq.com" target="_blank">微信</a></dd>
+                    <dd><a href="https://facebook.com" target="_blank">Facebook</a></dd>
+                    <dd><a href="https://twitter.com" target="_blank">Twitter</a></dd>
+                    <dd><a href="https://instagram.com" target="_blank">Instagram</a></dd>
+                </dl>
+                <dl>
+                    <dt>作者微信</dt>
+                    <dd>
+                        <img src="images/005.png" alt="">
+                    </dd>
+                </dl>
+            </div>
+
+
+            <div class="dynamic-counter-container" style="text-align: center; margin: 30px 0; padding: 20px; border-radius: 8px;">
+                <h2 style="font-size: 24px;  margin-bottom: 10px;">实时统计</h2>
+                <div>
+                    <span style="font-size: 18px;  margin-right: 10px;">访问量:</span>
+                    <span id="counterVisitors" style="font-size: 36px; font-weight: bold;">0</span>
+                </div>
+                <div>
+                    <span style="font-size: 18px;  margin-right: 10px;">注册用户:</span>
+                    <span id="counterUsers" style="font-size: 36px; font-weight: bold; ">0</span>
+                </div>
+            </div>
+
+
+            <div class="mod_copyright">
+                <div class="links">
+                    <a href="denglu.html">关于我们</a>
+                    <span>|</span>
+                    <a href="denglu.html">联系我们</a>
+                    <span>|</span>
+                    <a href="denglu.html">人才招聘</a>
+                    <span>|</span>
+                    <a href="denglu.html">友情链接</a>
+                </div>                                           
+                    <div class="copyright">
+                        版权所有©2005-2024 华南师范大学YLD科技公司 粤ICP备6666666号                  
+                        地址：佛山市南海区 邮编：666666 电话：666-666-666 传真：666-66666666
+                    </div>
+        </div>
+      </footer>
+<script type="text/javascript" src="js/index.js" ></script>
+<script type="text/javascript" src="js/search.js" ></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHENGDU</title>
+    <link rel="stylesheet" href="css/beijing.css"> 
+</head>
+<body>
+<header>
+    <h1>成都！</h1>
+</header>
+<div class="container">
+    <div class="card">
+        <img src="images/l.jpg" alt="都江堰" onclick="openModal(this.src)">
+        <h2>DUJIANGYAN</h2>
+        <p>都江堰。</p>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <img src="images/m.jpg" alt="都江堰" onclick="openModal(this.src)">
+            <h2>DUJIANGYAN</h2>
+            <p>都江堰的水很美。</p>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <img src="images/n.jpg" alt="都江堰的光影" onclick="openModal(this.src)">
+                <h2>DUJIANGYAN</h2>
+                <p>我觉得这张我拍的很有意境。</p>
+            </div>
+
+            <div class="container">
+                <div class="card">
+                    <img src="images/o.jpg" alt="灯" onclick="openModal(this.src)">
+                    <h2>light</h2>
+                    <p>我觉得这张我拍的很有意境。</p>
+                </div>
+    
+</div>
+
+<div id="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img src="" alt="Expanded View">
+</div>
+<script src="js/beijing.js"></script>
+</body>
+</html>

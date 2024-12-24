@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HANGZHOU</title>
+    <link rel="stylesheet" href="css/beijing.css"> 
+</head>
+<body>
+<header>
+    <h1>杭州！</h1>
+</header>
+<div class="container">
+    <div class="card">
+        <img src="images/22.jpg" alt="西湖" onclick="openModal(this.src)">
+        <h2>Xihu</h2>
+        <p>西湖。</p>
+    </div>
+
+    <div class="card">
+        <img src="images/c.jpg" alt="雷峰塔眺望" onclick="openModal(this.src)">
+        <h2>l</h2>
+        <p>雷峰塔眺望。</p>
+    </div>
+
+    
+</div>
+
+<div id="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img src="" alt="Expanded View">
+</div>
+<script src="js/beijing.js"></script>
+</body>
+</html>

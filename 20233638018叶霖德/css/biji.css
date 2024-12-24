@@ -1,0 +1,198 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'ZCOOL XiaoWei', 'Montserrat', sans-serif;
+    line-height: 1.8;
+    background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    font-size: 18px;
+    overflow-x: hidden; 
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    animation: fadeIn 1s ease-in-out;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #ffdd57;
+    text-shadow: 0 0 10px rgba(255, 221, 87, 0.7);
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #aaa;
+}
+
+
+.container {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+
+.note {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.note:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.5);
+}
+
+.note h2 {
+    font-size: 1.8rem;
+    color: #ffdd57;
+    margin-bottom: 10px;
+}
+
+.note p {
+    font-size: 1.2rem;
+    color: #ddd;
+    margin: 0;
+}
+
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.image-gallery img {
+    width: 20%; 
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.7);
+}
+
+
+#lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+#lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(255, 255, 255, 0.3);
+    animation: zoomIn 0.5s ease-in-out;
+}
+
+#lightbox::after {
+    content: "✖";
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.4);
+    font-size: 0.9rem;
+    color: #aaa;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .note h2 {
+        font-size: 1.5rem;
+    }
+
+    .image-gallery img {
+        width: 45%; 
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .note p {
+        font-size: 1rem;
+    }
+
+    .image-gallery img {
+        width: 90%; 
+    }
+}

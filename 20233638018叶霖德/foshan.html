@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOSHAN</title>
+    <link rel="stylesheet" href="css/beijing.css"> 
+</head>
+<body>
+<header>
+    <h1>佛山！</h1>
+</header>
+<div class="container">
+    <div class="card">
+        <img src="images/23.jpg" alt="南海观音" onclick="openModal(this.src)">
+        <h2>Guanyin in the South Sea</h2>
+        <p>南海观音。</p>
+    </div>
+
+    <div class="card">
+        <img src="images/24.jpg" alt="祖庙舞狮" onclick="openModal(this.src)">
+        <h2>lion</h2>
+        <p>祖庙舞狮。</p>
+    </div>
+
+    
+</div>
+
+<div id="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img src="" alt="Expanded View">
+</div>
+<script src="js/beijing.js"></script>
+</body>
+</html>

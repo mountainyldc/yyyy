@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEIJING</title>
+    <link rel="stylesheet" href="css/beijing.css"> 
+</head>
+<body>
+<header>
+    <h1>北京！</h1>
+</header>
+<div class="container">
+    <div class="card">
+        <img src="images/07.jpg" alt="故宫" onclick="openModal(this.src)">
+        <h2>Forbidden City</h2>
+        <p>在进入故宫前，我拍到了这样一张照片。</p>
+    </div>
+
+    <div class="card">
+        <img src="images/15.jpg" alt="天安门" onclick="openModal(this.src)">
+        <h2>Tian'anmen Square</h2>
+        <p>站在天安门前，感受伟大。</p>
+    </div>
+
+    <div class="card">
+        <img src="images/16.jpg" alt="长城" onclick="openModal(this.src)">
+        <h2>Great Wall</h2>
+        <p>登上长城之巅，我自豪拍下这一幕。</p>
+    </div>
+
+    <div class="card">
+        <img src="images/06.jpg" alt="颐和园" onclick="openModal(this.src)">
+        <h2>Summer Palace</h2>
+        <p>在颐和园中，我拍到了这样一张照片。</p>
+    </div>
+
+    <div class="card">
+        <img src="images/08.jpg" alt="故宫内部" onclick="openModal(this.src)">
+        <h2>Inner Forbidden City</h2>
+        <p>在故宫里面。</p>
+    </div>
+
+    <div class="card">
+        <img src="images/20.jpg" alt="雪地" onclick="openModal(this.src)">
+        <h2>snow</h2>
+        <p>雪地。</p>
+    </div>
+  
+
+    </div>
+
+</div>
+
+<div id="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img src="" alt="Expanded View">
+</div>
+<script src="js/beijing.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录与注册</title>
+    <link rel="stylesheet" href="css/denglu.css">
+</head>
+<body>
+    <div class="container">
+        <h1>登录</h1>
+        <form id="login-form">
+            <div class="form-group">
+                <label for="email">邮箱:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">密码:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <button type="submit">登录</button>
+        </form>
+
+        <div class="switch">
+            <p>还没有账户？<a href="#" onclick="showRegister()">注册</a></p>
+        </div>
+
+        <h1 style="display:none;" id="register-title">注册</h1>
+        <form id="register-form" style="display:none;">
+            <div class="form-group">
+                <label for="username">用户名:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="register-email">邮箱:</label>
+                <input type="email" id="register-email" name="register-email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">电话号码:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="register-password">密码:</label>
+                <input type="password" id="register-password" name="register-password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="confirm-password">确认密码:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="gender">性别:</label>
+                <select id="gender" name="gender">
+                    <option value="male">男</option>
+                    <option value="female">女</option>
+                    <option value="other">其他</option>
+                </select>
+            </div>
+
+            <button type="submit">注册</button>
+        </form>
+
+        <div class="switch" id="login-switch" style="display:none;">
+            <p>已有账户？<a href="#" onclick="showLogin()">登录</a></p>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/denglu.js" ></script>
+</body>
+</html>

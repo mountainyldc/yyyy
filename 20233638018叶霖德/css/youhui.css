@@ -1,0 +1,109 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ff0099, #ff6600, #ffcc00);
+    background-size: 300% 300%;
+    animation: gradientAnimation 6s ease infinite;
+    z-index: -1;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background: linear-gradient(to right, #ff6600, #ff0099);
+    background-clip: text;
+    color: transparent;
+    animation: titleAnimation 2s ease-out infinite;
+}
+
+@keyframes titleAnimation {
+    0% { text-shadow: 0 0 20px rgba(255, 0, 0, 1), 0 0 30px rgba(255, 0, 0, 0.8); }
+    50% { text-shadow: 0 0 30px rgba(255, 255, 255, 1), 0 0 40px rgba(255, 255, 255, 0.6); }
+    100% { text-shadow: 0 0 20px rgba(255, 0, 0, 1), 0 0 30px rgba(255, 0, 0, 0.8); }
+}
+
+p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    font-weight: lighter;
+    opacity: 0.8;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.cta-button {
+    padding: 15px 40px;
+    font-size: 1.5em;
+    background: linear-gradient(45deg, #ff0099, #ff6600);
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s ease, background 0.4s ease;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    transform: scale(1.2);
+    background: linear-gradient(45deg, #ff6600, #ff0099);
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.7);
+}
+
+.particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.particle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.8);
+    animation: moveParticles 2s infinite;
+}
+
+@keyframes moveParticles {
+    0% { transform: translate(0, 0) scale(1); opacity: 1; }
+    100% { transform: translate(200px, 200px) scale(0.5); opacity: 0; }
+}
